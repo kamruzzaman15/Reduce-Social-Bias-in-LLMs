@@ -1,0 +1,5 @@
+To run the kendal tau averaged across all bias types and models we combined few of our valid datasets (reported on the other the  folders named as Stereoset and Bias Detection Dataset) and then run our kendal tau test. 
+
+For an example how we get our 'CoT Vs System 1.csv' (in the CoT Vs System 1 Folder) file is described below:
+
+For each model (GPT-3.5, GPT-4, Lllama 2, Mistral 7B, Gemini) we first compare the CoT and System 1 valid responses and we take only those responses that are available in both datasets (in some few cases, for a particular context, CoT model got some invalid responses but maybe System 1 didn't get that as invalid), then make one dataset (one for each model) with two column one with the response from CoT prompting named as 'response_cot', and another one with the responses from System 1 prompting named as 'response_type1'. We did the same thing for Stereoset and Bias Detection Dataset and then combined the datasets to get the final  'CoT Vs System 1.csv' dataset for testing CoT Vs System 1.
